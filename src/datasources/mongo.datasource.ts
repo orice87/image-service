@@ -4,11 +4,11 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'mongo',
   connector: 'mongodb',
-  url: 'mongodb://localhost:27017/image-service',
-  host: 'localhost',
-  port: 27017,
-  user: '',
-  password: '',
+  url: process.env.MONGO_CONNECTION_STRING,
+  host: process.env.MONGO_HOST,
+  port: process.env.MONGO_PORT,
+  user: process.env.MONGO_USER,
+  password: process.env.MONGO_DATABASE,
   database: 'image-service',
   useNewUrlParser: true
 };

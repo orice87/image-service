@@ -1,3 +1,4 @@
+require('dotenv').config();
 import {ApplicationConfig, ImageServiceApplication} from './application';
 
 export * from './application';
